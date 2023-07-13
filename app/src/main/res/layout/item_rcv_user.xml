@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/img_thum">
+        <TextView
+            android:id="@+id/tv_name"
+            android:textSize="16sp"
+            tools:text="Nguyễn Tuấn"
+            android:textColor="#353535"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_username"
+            tools:text="username"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_thum"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:background="#EBDAD9D9"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1dp"/>
+</RelativeLayout>
